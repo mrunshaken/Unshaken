@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MA TRANSFORMATION LAB - Transform Your Life</title>
+  <meta name="description" content="MA TRANSFORMATION LAB - Holistic counselling, wellness coaching across Canada, UK, Europe, East Africa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --brand-purple: #8A2BE2;
+      --brand-gold: #FFD700;
+      --brand-orange: #FF8C00;
+      --brand-yellow: #FFEB3B;
+      --header-black: #000000;
+      --shadow: 0 4px 12px rgba(0,0,0,0.12);
+      --gradient-primary: linear-gradient(135deg, #FFD700, #FF8C00);
+      --gradient-purple: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    
+    a { text-decoration: none; color: inherit; }
+    
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      background: var(--header-black);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+      border-bottom: 2px solid var(--brand-gold);
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      color: #fff;
+    }
+    
+    .brand img {
+      height: 42px;
+      width: auto;
+    }
+    
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    
+    .brand-name {
+      background: linear-gradient(90deg, #FFD700, #FF8C00, #8A2BE2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+    
+    .brand-tagline {
+      font-size: 0.75rem;
+      color: #FFD700;
+      font-style: italic;
+      opacity: 0.9;
+    }
+    
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    
+    nav a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 6px 8px;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover { color: var(--brand-gold); }
+    
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--brand-gold);
+    }
+    
+    /* HERO */
+    .hero {
+      padding-top: 140px;
+      padding-bottom: 100px;
+      text-align: center;
+      background: var(--gradient-purple);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin: 0 0 12px;
+      font-weight: 800;
+      color: #FFD700;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin: 0 auto 18px;
+      max-width: 860px;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+    
+    .hero .locations {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 20px 0 30px;
+      animation: fadeInUp 1s ease-out 0.4s both;
+    }
+    
+    .badge {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 20px;
+      animation: fadeInUp 1s ease-out 0.6s both;
+    }
+    
+    .btn {
+      background: var(--gradient-primary);
+      color: #111;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 0;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 1rem;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+    }
+    
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid var(--brand-gold);
+      color: #fff;
+    }
+    
+    .btn.secondary:hover {
+      background: var(--brand-gold);
+      color: #111;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* SECTIONS */
+    section {
+      padding: 74px 20px;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 8px 0 12px;
+      color: #111;
+    }
+    
+    .section-sub {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    
+    .card h3 {
+      color: var(--brand-purple);
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+    
+    /* STATS */
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    
+    .color-gold { color: var(--brand-gold); }
+    .color-orange { color: var(--brand-orange); }
+    .color-purple { color: var(--brand-purple); }
+    .color-yellow { color: var(--brand-yellow); }
+    
+    /* EXPERTS */
+    .experts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+    }
+    
+    .expert {
+      text-align: center;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      background: #fff;
+      transition: all 0.3s;
+    }
+    
+    .expert:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(138, 43, 226, 0.15);
+    }
+    
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-primary);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    
+    .expert .name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    
+    .expert .role {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    /* COURSES */
+    #courses {
+      background: #2E0854;
+      color: #fff;
+    }
+    
+    #courses .section-title,
+    #courses .section-sub {
+      color: #fff;
+    }
+    
+    .course-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .course-card h3 {
+      color: var(--brand-gold);
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    
+    .module {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    
+    .module-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--brand-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #111;
+      flex-shrink: 0;
+    }
+    
+    .module-info h4 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--brand-yellow);
+    }
+    
+    .module-info p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    /* SOCIAL */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    
+    .social a {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #111;
+      background: #fff;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      font-size: 1.3rem;
+    }
+    
+    .social a:hover {
+      transform: translateY(-3px);
+    }
+    
+    .social a.tiktok {
+      background: linear-gradient(135deg, #000000, #69C9D0, #EE1D52);
+      color: #fff;
+    }
+    
+    .social a.facebook { color: #1877F2; }
+    .social a.instagram { color: #E4405F; }
+    .social a.linkedin { color: #0A66C2; }
+    .social a.youtube { color: #FF0000; }
+    
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #ddd;
+      padding: 50px 20px;
+      text-align: center;
+      border-top: 2px solid var(--brand-gold);
+    }
+    
+    footer p {
+      margin-bottom: 12px;
+    }
+    
+    footer a {
+      color: var(--brand-gold);
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: #fff;
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        height: 64px;
+      }
+      
+      .menu-toggle {
+        display: flex;
+      }
+      
+      nav {
+        display: none;
+      }
+      
+      nav.active {
+        display: flex;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: #000;
+        flex-direction: column;
+        padding: 20px;
+        gap: 12px;
+      }
+      
+      .hero {
+        padding: 120px 20px 80px;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .section-title {
+        font-size: 1.6rem;
+      }
+      
+      .cta {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a class="brand" href="#">
+      <img src="logo.png" alt="MA Transformation Lab Logo">
+      <div class="brand-text">
+        <span class="brand-name">MA TRANSFORMATION LAB</span>
+        <span class="brand-tagline">Ignite Your Growth</span>
+      </div>
+    </a>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#experts">Experts</a>
+      <a href="#courses">Programs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>From Struggle to Strength, From Doubt to Clarity</h1>
+      <p>Transform Your Life with Holistic Wellness Coaching, Expert Counselling, and Comprehensive Support</p>
+      <div class="locations">
+        <span class="badge">🇨🇦 Canada</span>
+        <span class="badge">🇬🇧 UK</span>
+        <span class="badge">🇪🇺 Europe</span>
+        <span class="badge">🌍 East Africa</span>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#contact">Begin Your Transformation</a>
+        <a class="btn secondary" href="#experts">Meet Our Experts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <h2 class="section-title">Transform Lives Daily</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card">
+          <div class="stat-number color-gold">500+</div>
+          <div>Lives Transformed</div>
+        </div>
+        <div class="card">
+          <div class="stat-number color-yellow">14+</div>
+          <div>Years Experience</div>
+        </div>
+        <div class="card">
+          <div class="stat-number color-purple">4</div>
+          <div>Continents</div>
+        </div>
+        <div class="card">
+          <div class="stat-number color-orange">98%</div>
+          <div>Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Comprehensive wellness solutions tailored to your unique needs</p>
+      <div class="grid">
+        <div class="card">
+          <h3>🧠 Holistic Counselling</h3>
+          <p>Personalized therapy addressing mental, emotional, and spiritual wellbeing for lasting transformation.</p>
+        </div>
+        <div class="card">
+          <h3>❤️ Relationship Support</h3>
+          <p>Strengthen connections, resolve conflicts, and build healthier relationships with expert guidance.</p>
+        </div>
+        <div class="card">
+          <h3>💪 Diabetic Reversal</h3>
+          <p>Comprehensive programs to manage and reverse diabetes through lifestyle and nutritional changes.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Tutoring & Courses</h3>
+          <p>Educational support and specialized courses for personal development and academic success.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Career Coaching</h3>
+          <p>Strategic guidance to advance your career, find purpose, and achieve professional fulfillment.</p>
+        </div>
+        <div class="card">
+          <h3>✨ Wellness Programs</h3>
+          <p>Customized wellness plans integrating nutrition, exercise, and mindfulness for optimal health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTS -->
+  <section id="experts">
+    <div class="container">
+      <h2 class="section-title">Meet Our Experts</h2>
+      <p class="section-sub">A dedicated team of professionals committed to your transformation</p>
+      <div class="experts">
+        <div class="expert">
+          <div class="avatar">MA</div>
+          <div class="name">Mahmoud Ahmed</div>
+          <div class="role">Founder & Lead Coach</div>
+        </div>
+        <div class="expert">
+          <div class="avatar">BF</div>
+          <div class="name">Dr. B Farouk</div>
+          <div class="role">Cardiologist & Wellness Consultant</div>
+        </div>
+        <div class="expert">
+          <div class="avatar">SH</div>
+          <div class="name">Sagal Hussain</div>
+          <div class="role">Diabetes & Nutrition Specialist</div>
+        </div>
+        <div class="expert">
+          <div class="avatar">AA</div>
+          <div class="name">Ayan Abdirahman</div>
+          <div class="role">Counselling Specialist</div>
+        </div>
+        <div class="expert">
+          <div class="avatar">JF</div>
+          <div class="name">James Franklin</div>
+          <div class="role">Mental Health Consultant</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="container">
+      <h2 class="section-title">The Transformation Journey</h2>
+      <p class="section-sub">Our Comprehensive 12-Module Program</p>
+      
+      <div class="course-card">
+        <h3>PHASE 1: FOUNDATIONS</h3>
+        <div class="module">
+          <div class="module-num">1</div>
+          <div class="module-info">
+            <h4>The Awakening Moment</h4>
+            <p>Discover your "why" and begin your journey</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">2</div>
+          <div class="module-info">
+            <h4>Healing from Inside Out</h4>
+            <p>Release trauma and regulate your nervous system</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">3</div>
+          <div class="module-info">
+            <h4>The Art of Letting Go</h4>
+            <p>Release dependencies and set healthy boundaries</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>PHASE 2: RECONSTRUCTION</h3>
+        <div class="module">
+          <div class="module-num">4</div>
+          <div class="module-info">
+            <h4>The New Self</h4>
+            <p>Design your identity with confidence</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">5</div>
+          <div class="module-info">
+            <h4>Nutrition & Metabolic Health</h4>
+            <p>Master the nutrition-mental health connection</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">6</div>
+          <div class="module-info">
+            <h4>Faith, Flow & Focus</h4>
+            <p>Integrate spiritual practices into transformation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>PHASE 3: RECREATION</h3>
+        <div class="module">
+          <div class="module-num">7</div>
+          <div class="module-info">
+            <h4>Purpose Mapping</h4>
+            <p>Turn pain into purpose</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">8</div>
+          <div class="module-info">
+            <h4>Mastering Communication</h4>
+            <p>Develop authentic speaking and listening</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">9</div>
+          <div class="module-info">
+            <h4>Building Legacy Projects</h4>
+            <p>Design purpose-driven life projects</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>PHASE 4: TRANSCENDENCE</h3>
+        <div class="module">
+          <div class="module-num">10</div>
+          <div class="module-info">
+            <h4>Becoming the Guide</h4>
+            <p>Transition from survivor to mentor</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">11</div>
+          <div class="module-info">
+            <h4>Continuous Evolution</h4>
+            <p>Cultivate growth mindset and measure progress</p>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-num">12</div>
+          <div class="module-info">
+            <h4>Legacy Mindset</h4>
+            <p>Define success and create lasting impact</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a class="btn" href="#contact">Enroll in The Transformation Journey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Ready to Transform Your Life?</h2>
+      <p class="section-sub">Schedule your free 15-minute consultation today</p>
+      
+      <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 1.1rem; margin-bottom: 20px;">📧 <strong>Email:</strong> matransformationlab@gmail.com</p>
+        <p style="font-size: 1.1rem; margin-bottom: 30px;">📱 <strong>WhatsApp:</strong> +252 63 866 6133</p>
+        
+        <div class="social">
+          <a href="https://facebook.com/matransformationlab" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/matransformationlab" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@matransformationlab" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://linkedin.com/company/matransformationlab" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://youtube.com/@matransformationlab" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div style="margin-top: 30px;">
+          <a class="btn" href="mailto:matransformationlab@gmail.com">Contact Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p><strong>MA TRANSFORMATION LAB</strong> - Ignite Your Growth</p>
+      <p>🇨🇦 Canada • 🇬🇧 UK • 🇪🇺 Europe • 🌍 East Africa</p>
+      <p style="margin-top: 20px;">
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="#">Refund Policy</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 0.9rem;">© 2025 MA Transformation Lab. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('mainNav').classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

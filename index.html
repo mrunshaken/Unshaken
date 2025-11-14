@@ -1,0 +1,2746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA TRANSFORM LAB | Transform Your Mind, Body & Business</title>
+    <meta name="description" content="Strategic ecosystem for emotional mastery, health optimization, and business growth. 750+ lives elevated across 7 continents.">
+    <meta name="keywords" content="business transformation, AI courses, emotional mastery, health optimization, MA Builders Lab">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ========================================
+        MA TRANSFORM LAB - COMPLETE TRANSFORMATION
+        ======================================== */
+        :root {
+            /* Enhanced Brand Colors */
+            --gold: #FFC107;
+            --yellow: #FFD700;
+            --purple: #8E44AD;
+            --dark-purple: #6B46C1;
+            --orange: #FF5722;
+            --orange-light: #FF9800;
+            --blue: #1E3A8A;
+            --dark-navy: #0A1628;
+            --white: #FFFFFF;
+            --light-gray: #bfc4d6;
+            
+            /* Glassmorphism Variables */
+            --glass-bg: rgba(10, 22, 40, 0.8);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            --glass-blur: blur(10px);
+            
+            /* Enhanced Gradients */
+            --gradient-bg: linear-gradient(180deg, var(--dark-navy) 0%, var(--blue) 100%);
+            --gradient-gold: linear-gradient(135deg, var(--gold) 0%, var(--yellow) 50%, var(--orange-light) 100%);
+            --gradient-purple: linear-gradient(135deg, var(--dark-purple) 0%, var(--purple) 100%);
+            --gradient-orange: linear-gradient(135deg, var(--orange) 0%, var(--orange-light) 100%);
+            --gradient-hero: linear-gradient(180deg, var(--dark-navy) 0%, var(--blue) 100%);
+            
+            /* Shadow System */
+            --shadow-sm: 0 2px 8px rgba(255, 193, 7, 0.15);
+            --shadow-md: 0 8px 24px rgba(107, 70, 193, 0.25);
+            --shadow-lg: 0 16px 48px rgba(30, 58, 138, 0.35);
+            --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.4);
+            --shadow-glow: 0 0 32px rgba(255, 193, 7, 0.3);
+            
+            --max-width: 1200px;
+            --radius: 16px;
+        }
+
+        /* ========================================
+        RESET & BASE STYLES
+        ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--gradient-bg);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* ========================================
+        MODERN GLASSMORPHISM HEADER
+        ======================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.5rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-list a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 6px 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-list a:hover {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-list a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-gold);
+            transition: width 0.3s ease;
+        }
+
+        .nav-list a:hover:after {
+            width: 100%;
+        }
+
+        /* Transform Lab Dropdown Styles */
+        .nav-item {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            min-width: 240px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 1001;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .dropdown-menu li {
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown-menu li:last-child {
+            margin-bottom: 0;
+        }
+
+        .dropdown-menu .nav-link {
+            white-space: nowrap;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            width: 100%;
+            display: block;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-menu .nav-link:hover {
+            background: rgba(255,255,255,0.05);
+            transform: translateX(5px);
+        }
+
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--gold);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* ========================================
+        URGENCY ELEMENTS
+        ======================================== */
+        .urgency-banner {
+            background: var(--gradient-orange);
+            color: var(--dark-navy);
+            padding: 12px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .countdown-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0 20px;
+        }
+
+        .timer-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timer-value {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .timer-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .progress-container {
+            max-width: 300px;
+            margin: 10px auto 0;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--dark-navy);
+            border-radius: 4px;
+            width: 82%;
+            transition: width 1s ease;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+        HERO SECTION - UPDATED CONTENT
+        ======================================== */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 140px 20px 80px;
+            background: var(--gradient-hero);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-glass {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            padding: 60px 40px;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 40px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-tagline {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-style: italic;
+            background: var(--gradient-orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        .hero-description {
+            color: var(--light-gray);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .compact-locations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 25px 0 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .location-pair {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .location-tag {
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--glass-border);
+            font-weight: 600;
+            color: var(--white);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            min-width: 120px;
+        }
+
+        .urgency-strip {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .urgency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 50px;
+            background: rgba(255, 87, 34, 0.2);
+            border: 1px solid var(--orange);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .social-proof {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 50px;
+            background: rgba(255, 193, 7, 0.2);
+            border: 1px solid var(--gold);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* ========================================
+        MODERN BUTTONS - GLASSMORPHISM
+        ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .btn:hover:before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary {
+            background: var(--gradient-purple);
+            color: var(--white);
+            border: 1px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .btn-secondary {
+            background: var(--gradient-orange);
+            color: var(--white);
+            border: 1px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: var(--white);
+        }
+
+        .btn-gold {
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            font-weight: 800;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.06);
+            color: var(--light-gray);
+        }
+
+        .btn-small {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ========================================
+        COUNTER STATS SECTION - UPDATED
+        ======================================== */
+        .counter-stats-section {
+            padding: 80px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .counter-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .counter-stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+            }
+        }
+
+        .counter-stat-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-radius: var(--radius);
+            border: 1px solid transparent;
+            background: linear-gradient(45deg, var(--gold), var(--blue)) padding-box,
+                        linear-gradient(45deg, var(--gold), var(--blue)) border-box;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .counter-stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .counter-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .counter-stat-label {
+            font-size: 1rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* ========================================
+        STRATEGIC PARTNERS SECTION - ENHANCED
+        ======================================== */
+        .strategic-partners-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title.gold {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title.white {
+            color: var(--white);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--light-gray);
+        }
+
+        .strategic-partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .strategic-partner-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 30px 25px;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: var(--shadow-md);
+        }
+
+        .strategic-partner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--gold);
+        }
+
+        .new-badge {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .strategic-partner-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--gold);
+        }
+
+        .strategic-partner-name {
+            font-weight: 600;
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .strategic-partner-description {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* ========================================
+        STRATEGIC LEADERSHIP TEAM SECTION
+        ======================================== */
+        .leadership-team-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .team-member-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: var(--shadow-md);
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--purple);
+        }
+
+        .team-member-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+            border: 3px solid var(--gold);
+        }
+
+        .team-member-name {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--gold);
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .team-member-role {
+            color: var(--purple);
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .team-member-bio {
+            color: var(--light-gray);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .ai-team-division {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 4px solid var(--purple);
+            padding: 30px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin-top: 40px;
+        }
+
+        .ai-team-division i {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* ========================================
+        ENHANCED SPECIALIST NETWORK
+        ======================================== */
+        .specialist-network-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .specialist-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .specialist-category {
+            background: var(--glass-bg);
+            padding: 30px 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--purple);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            backdrop-filter: blur(10px);
+        }
+
+        .specialist-category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--gold);
+        }
+
+        .specialist-category h4 {
+            color: var(--purple);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+        }
+
+        .specialist-category h4 i {
+            color: var(--gold);
+        }
+
+        .specialist-category p {
+            color: var(--light-gray);
+            margin-bottom: 15px;
+        }
+
+        .specialist-subcategories {
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+
+        .specialist-subcategory {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .specialist-subcategory:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* ========================================
+        MA BUILDERS LAB - FLAGSHIP PROGRAM
+        ======================================== */
+        .builders-lab-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(255,193,7,0.05));
+        }
+
+        .flagship-badge {
+            display: inline-block;
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .builders-lab-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .builders-lab-tagline {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .lean-methodology {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .lean-methodology h4 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .lean-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .lean-feature {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid var(--gold);
+        }
+
+        .builders-lab-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .builders-lab-feature {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .builders-lab-feature:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .builders-lab-feature i {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: var(--shadow-md);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gold);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--purple);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--gold);
+            color: var(--dark-navy);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .limited-badge {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--orange);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-tier {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .pricing-description {
+            color: var(--light-gray);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--light-gray);
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--purple);
+            font-weight: bold;
+        }
+
+        .btn-enroll {
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-enroll:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ========================================
+        FREE RESOURCES HUB
+        ======================================== */
+        .free-resources-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .resource-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: var(--shadow-md);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--purple);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .new-resource-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--gradient-gold);
+            color: var(--dark-navy);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .resource-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .resource-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--light-gray);
+        }
+
+        .resource-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--purple);
+            font-weight: bold;
+        }
+
+        .btn-download {
+            background: var(--gradient-purple);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .resource-note {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--light-gray);
+            margin-top: 0.5rem;
+        }
+
+        /* ========================================
+        TESTIMONIALS CAROUSEL
+        ======================================== */
+        .testimonials-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .testimonials-carousel {
+            position: relative;
+            max-width: 1000px;
+            margin: 50px auto 0;
+            overflow: hidden;
+            border-radius: var(--radius);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .testimonial-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px;
+            border-radius: var(--radius);
+            border: 1px solid transparent;
+            background: linear-gradient(45deg, var(--orange-light), var(--purple)) padding-box,
+                        linear-gradient(45deg, var(--orange-light), var(--purple)) border-box;
+            border: 1px solid transparent;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .client-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+            border: 3px solid var(--gold);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: var(--light-gray);
+            font-size: 1.1rem;
+        }
+
+        .client-name {
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .client-language {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+
+        .testimonial-metrics {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .testimonial-metric {
+            background: rgba(255,193,7,0.2);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: var(--gold);
+        }
+
+        /* ========================================
+        CONTACT SECTION
+        ======================================== */
+        .contact-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            padding: 20px;
+        }
+
+        .contact-form-container {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px;
+            border-radius: var(--radius);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid transparent;
+            background: linear-gradient(45deg, var(--gold), var(--blue)) padding-box,
+                        linear-gradient(45deg, var(--gold), var(--blue)) border-box;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ========================================
+        FOOTER
+        ======================================== */
+        .footer {
+            background: var(--dark-navy);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .footer-section p, .footer-section a {
+            color: var(--light-gray);
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+
+        .footer-legal {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .copyright {
+            color: var(--light-gray);
+        }
+
+        .footer-tagline {
+            color: var(--gold);
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* ========================================
+        FLOATING BUTTONS
+        ======================================== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .fab {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            border: 0;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: transform .18s ease, opacity .18s ease;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .fab.book {
+            background: var(--gradient-purple);
+        }
+
+        .fab.top {
+            background: var(--gradient-orange);
+        }
+
+        .fab.wa {
+            background: #25D366;
+        }
+
+        .fab:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ========================================
+        MODAL FOR FREE RESOURCES
+        ======================================== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .form-submit {
+            background: var(--gradient-purple);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ========================================
+        MOBILE RESPONSIVE
+        ======================================== */
+        @media (max-width: 768px) {
+            .header {
+                height: 70px;
+                padding: 0 15px;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--glass-bg);
+                backdrop-filter: var(--glass-blur);
+                padding: 1rem;
+                border: 1px solid var(--glass-border);
+            }
+            
+            .nav.active {
+                display: block;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            /* Mobile dropdown adjustments */
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: transparent;
+                border: none;
+                padding: 0.5rem 0 0 1rem;
+                box-shadow: none;
+            }
+
+            .hero-section {
+                padding: 120px 15px 60px;
+            }
+
+            .hero-glass {
+                padding: 40px 20px;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.4rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-container,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid,
+            .services-grid,
+            .experts-grid,
+            .ai-courses-grid,
+            .programs-grid,
+            .strategic-partners-grid,
+            .specialist-categories,
+            .resources-grid,
+            .pricing-grid,
+            .courses-grid,
+            .counter-stats-grid,
+            .builders-lab-features,
+            .team-grid,
+            .commission-tiers {
+                grid-template-columns: 1fr;
+            }
+
+            .program-card.featured,
+            .ai-course-card.featured,
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-5px);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .fab {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+
+            .urgency-strip {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .counter-stat-number {
+                font-size: 2rem;
+            }
+            
+            .builders-lab-tagline {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- URGENCY BANNER -->
+    <div class="urgency-banner">
+        <div class="container">
+            <div class="countdown-timer">
+                <span>🚀 Founder's Accelerator Program - Limited to First 25</span>
+                <div class="timer-unit">
+                    <div class="timer-value" id="days">14</div>
+                    <div class="timer-label">DAYS</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="hours">23</div>
+                    <div class="timer-label">HRS</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="minutes">59</div>
+                    <div class="timer-label">MINS</div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">82% of Founding Members Enrolled - Limited to First 25 Visionary Founders</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODERN GLASSMORPHISM HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">MA TRANSFORM LAB</a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experts">Experts</a></li>
+                    
+                    <!-- Transform Lab Dropdown -->
+                    <li class="nav-item">
+                        <a href="#transform-lab" class="nav-link">
+                            Transform Lab <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#free-resources" class="nav-link">Start Free Resources</a></li>
+                            <li><a href="#builders-lab" class="nav-link">Launch Your Business (MA Builders Lab)</a></li>
+                            <li><a href="#ai-courses" class="nav-link">AI Courses & Tools</a></li>
+                            <li><a href="#get-certified" class="nav-link">Get Certified Today</a></li>
+                            <li><a href="#core-programs" class="nav-link">Core Programs</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#system">Transformation System</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION - UPDATED CONTENT -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-glass">
+                <h1 class="hero-title">MA TRANSFORM LAB</h1>
+                <p class="hero-subtitle">Go from Struggle to Strength, Doubt to Direction, and Chaos to Clarity</p>
+                <p class="hero-tagline">Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+                <p class="hero-description">Our ecosystem for emotional mastery, health optimization, and business growth combines psychology, metabolic wellness, and AI-powered business systems to create lasting transformation.</p>
+                
+                <!-- Enhanced Compact Country Layout -->
+                <div class="compact-locations">
+                    <div class="location-pair">
+                        <div class="location-tag">Canada</div>
+                        <div class="location-tag">UK</div>
+                    </div>
+                    <div class="location-pair">
+                        <div class="location-tag">Europe</div>
+                        <div class="location-tag">East Africa</div>
+                    </div>
+                    <div class="location-tag">Global Digital</div>
+                </div>
+                
+                <!-- Urgency Elements -->
+                <div class="urgency-strip">
+                    <div class="urgency-badge">
+                        <i class="fas fa-rocket"></i>
+                        Founder's Cohort Closing in <strong>[14 Days]</strong>
+                    </div>
+                    <div class="social-proof">
+                        <i class="fas fa-fire"></i>
+                        <strong>47 Visionaries</strong> Joined This Week
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Start My Transformation Journey
+                </a>
+                <a href="#builders-lab" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i>
+                    Join Founder's Program 🚀
+                </a>
+                <a href="https://wa.me/252638666133" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Get Immediate Response
+                </a>
+            </div>
+
+            <!-- Free download strip -->
+            <div class="download-strip" style="margin-top: 30px; display: inline-flex; align-items: center; gap: 14px; padding: 12px 20px; border-radius: 10px; background: linear-gradient(90deg, rgba(139,92,246,0.1), rgba(255,193,7,0.05)); border: 1px solid rgba(255,255,255,0.03); max-width: 100%;">
+                <div><strong>Download Free: 21-Day Mental Wellness Reset Guide (Valued at $97)</strong></div>
+                <div style="margin-left:auto">
+                    <button class="btn btn-primary btn-small" onclick="openModal('mental-wellness')">Get My Free Resources</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER STATS SECTION - UPDATED -->
+    <section class="counter-stats-section">
+        <div class="container">
+            <div class="counter-stats-grid">
+                <div class="counter-stat-card">
+                    <div class="counter-stat-number" id="counter-1">0</div>
+                    <div class="counter-stat-label">Lives Elevated</div>
+                </div>
+                
+                <div class="counter-stat-card">
+                    <div class="counter-stat-number" id="counter-2">0</div>
+                    <div class="counter-stat-label">Businesses Launched</div>
+                </div>
+                
+                <div class="counter-stat-card">
+                    <div class="counter-stat-number" id="counter-3">0</div>
+                    <div class="counter-stat-label">Years of Experience</div>
+                </div>
+                
+                <div class="counter-stat-card">
+                    <div class="counter-stat-number" id="counter-4">0</div>
+                    <div class="counter-stat-label">Continents Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRATEGIC PARTNERS SECTION -->
+    <section class="strategic-partners-section">
+        <div class="container">
+            <h2 class="section-title gold">Strategic Partners</h2>
+            <p class="section-subtitle">Collaborating with leading organizations for transformation excellence</p>
+            
+            <div class="strategic-partners-grid">
+                <div class="strategic-partner-card">
+                    <div class="strategic-partner-icon"><i class="fas fa-heartbeat"></i></div>
+                    <div class="strategic-partner-name">Health Systems & Healthcare</div>
+                    <p class="strategic-partner-description">Leading medical institutions and healthcare providers</p>
+                </div>
+                
+                <div class="strategic-partner-card">
+                    <div class="strategic-partner-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="strategic-partner-name">Educational Institutions</div>
+                    <p class="strategic-partner-description">Universities and learning organizations</p>
+                </div>
+                
+                <div class="strategic-partner-card">
+                    <div class="strategic-partner-icon"><i class="fas fa-building"></i></div>
+                    <div class="strategic-partner-name">Business Corps & Enterprises</div>
+                    <p class="strategic-partner-description">Corporate partners and business networks</p>
+                </div>
+                
+                <div class="strategic-partner-card">
+                    <div class="strategic-partner-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div class="strategic-partner-name">NGOs & Charities</div>
+                    <p class="strategic-partner-description">Non-profit organizations and charitable foundations</p>
+                </div>
+                
+                <div class="strategic-partner-card">
+                    <div class="new-badge">NEW</div>
+                    <div class="strategic-partner-icon"><i class="fas fa-users"></i></div>
+                    <div class="strategic-partner-name">United Students College</div>
+                    <p class="strategic-partner-description">Student networks and educational partnerships</p>
+                </div>
+                
+                <div class="strategic-partner-card">
+                    <div class="new-badge">NEW</div>
+                    <div class="strategic-partner-icon"><i class="fas fa-code"></i></div>
+                    <div class="strategic-partner-name">Stella Developers</div>
+                    <p class="strategic-partner-description">Technology and digital innovation partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRATEGIC LEADERSHIP TEAM SECTION -->
+    <section class="leadership-team-section" id="about">
+        <div class="container">
+            <h2 class="section-title gold">OUR STRATEGIC LEADERSHIP TEAM</h2>
+            <p class="section-subtitle">Meet the experts driving transformation across multiple disciplines</p>
+            
+            <div class="team-grid">
+                <div class="team-member-card">
+                    <div class="team-member-avatar">MA</div>
+                    <h3 class="team-member-name">Mahmoud Ahmed</h3>
+                    <p class="team-member-role">Founder & Lead Transformation Strategist</p>
+                    <p class="team-member-bio">Architect of the MA Transform Lab system. Specializes in behavioral restructuring, performance optimization, and multidisciplinary transformation frameworks for individuals and organizations.</p>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-avatar">DF</div>
+                    <h3 class="team-member-name">Dr. B. Farouk</h3>
+                    <p class="team-member-role">Medical & Wellness Systems Consultant</p>
+                    <p class="team-member-bio">Leads clinical oversight and health-based intervention strategies across metabolic health, chronic illness management, and integrated wellness planning.</p>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-avatar">SM</div>
+                    <h3 class="team-member-name">Sagal Muse</h3>
+                    <p class="team-member-role">Nutrition & Metabolic Health Specialist</p>
+                    <p class="team-member-bio">Designs evidence-driven nutritional protocols and lifestyle systems with a focus on diabetes support, metabolic optimization, and long-term health transformation.</p>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-avatar">JT</div>
+                    <h3 class="team-member-name">James Thompson</h3>
+                    <p class="team-member-role">Mental Health & Human Dynamics Specialist</p>
+                    <p class="team-member-bio">Oversees psychological resilience, trauma-informed frameworks, and mental performance systems that support clients through complex emotional and behavioral transitions.</p>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-avatar">KA</div>
+                    <h3 class="team-member-name">Keshav Agraw</h3>
+                    <p class="team-member-role">Business Architecture & Market Development Strategist</p>
+                    <p class="team-member-bio">Builds business systems, monetization frameworks, and market expansion strategies for entrepreneurs and organizations leveraging digital and AI-powered solutions.</p>
+                </div>
+            </div>
+            
+            <!-- AI Transformation Division -->
+            <div class="ai-team-division">
+                <div style="text-align: center;">
+                    <i class="fas fa-robot"></i>
+                    <h3 style="color: var(--gold); margin: 15px 0 10px;">AI Transformation Division</h3>
+                    <p style="color: var(--light-gray); line-height: 1.6;">Automation, Systems Engineering & Digital Innovation<br>
+                    A technical unit focused on AI workflow development, automation engineering, digital product architecture, and enterprise-level AI implementation across MA Transform Lab programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENHANCED SPECIALIST NETWORK -->
+    <section class="specialist-network-section" id="experts">
+        <div class="container">
+            <h2 class="section-title gold">Expanded Specialist Network</h2>
+            <p class="section-subtitle">Access specialized expertise across multiple transformation domains</p>
+            
+            <div class="specialist-categories">
+                <div class="specialist-category">
+                    <h4><i class="fas fa-user-md"></i> Medical & Clinical</h4>
+                    <p>Certified healthcare professionals and clinical experts</p>
+                    <div class="specialist-subcategories">
+                        <div class="specialist-subcategory">Medical Doctors & Cardiologists</div>
+                        <div class="specialist-subcategory">Psychiatrists & Therapists</div>
+                        <div class="specialist-subcategory">Nutritionists & Dietitians</div>
+                    </div>
+                </div>
+                
+                <div class="specialist-category">
+                    <h4><i class="fas fa-hands"></i> Holistic & Faith</h4>
+                    <p>Practitioners integrating mind, body, and spiritual wellness</p>
+                    <div class="specialist-subcategories">
+                        <div class="specialist-subcategory">Faith-based Support & Ruqya</div>
+                        <div class="specialist-subcategory">Holistic Wellness Practitioners</div>
+                        <div class="specialist-subcategory">Mental Health Strategists</div>
+                    </div>
+                </div>
+                
+                <div class="specialist-category">
+                    <h4><i class="fas fa-briefcase"></i> Business & Career</h4>
+                    <p>Industry leaders in entrepreneurship and professional growth</p>
+                    <div class="specialist-subcategories">
+                        <div class="specialist-subcategory">Career & Business Mentors</div>
+                        <div class="specialist-subcategory">Financial Planning Advisors</div>
+                        <div class="specialist-subcategory">Operations & Scaling Specialists</div>
+                    </div>
+                </div>
+                
+                <div class="specialist-category">
+                    <h4><i class="fas fa-robot"></i> AI & Digital Transformation</h4>
+                    <p>Technology experts driving digital innovation</p>
+                    <div class="specialist-subcategories">
+                        <div class="specialist-subcategory">Digital Business Architects</div>
+                        <div class="specialist-subcategory">AI Implementation Specialists</div>
+                        <div class="specialist-subcategory">Revenue Growth Strategists</div>
+                        <div class="specialist-subcategory">Automation Engineers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MA BUILDERS LAB - FLAGSHIP PROGRAM -->
+    <section class="builders-lab-section" id="builders-lab">
+        <div class="container">
+            <div class="builders-lab-header">
+                <div class="flagship-badge">🚀 FOUNDER'S ACCELERATOR PROGRAM</div>
+                <h3 class="section-title white">MA BUILDERS LAB</h3>
+                <p class="builders-lab-tagline">"Lean Launch Method: Build Your Business in 30 Days Without Burnout"</p>
+                <p class="section-subtitle">Limited to First 25 Visionary Founders | Proven Lean Framework: Validate → Build → Scale → Automate</p>
+            </div>
+
+            <!-- Lean Methodology Section -->
+            <div class="lean-methodology">
+                <h4>Build More With Less - The Lean Transformation Approach</h4>
+                <p style="color: var(--light-gray); margin-bottom: 1rem;">Minimum Viable Transformation | Efficient Systems, Maximum Results | Automate Your Growth</p>
+                <div class="lean-features">
+                    <div class="lean-feature">
+                        <strong>Validate</strong><br>
+                        Market research & idea validation
+                    </div>
+                    <div class="lean-feature">
+                        <strong>Build</strong><br>
+                        MVP development & testing
+                    </div>
+                    <div class="lean-feature">
+                        <strong>Scale</strong><br>
+                        Growth systems & automation
+                    </div>
+                    <div class="lean-feature">
+                        <strong>Automate</strong><br>
+                        AI-powered operations
+                    </div>
+                </div>
+            </div>
+
+            <div class="builders-lab-features">
+                <div class="builders-lab-feature">
+                    <i class="fas fa-search"></i>
+                    <h4>AI-Powered Business Validation Suite</h4>
+                    <p>Validate your business idea with AI-driven market analysis</p>
+                </div>
+                <div class="builders-lab-feature">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Lean MVP Development System</h4>
+                    <p>Build your minimum viable product quickly and efficiently</p>
+                </div>
+                <div class="builders-lab-feature">
+                    <i class="fas fa-funnel-dollar"></i>
+                    <h4>Automated Client Acquisition Funnel</h4>
+                    <p>Set up automated systems to attract and convert clients</p>
+                </div>
+                <div class="builders-lab-feature">
+                    <i class="fas fa-users"></i>
+                    <h4>1:1 Strategy Sessions with Mahmoud Ahmed</h4>
+                    <p>Personal guidance from our founder and lead strategist</p>
+                </div>
+                <div class="builders-lab-feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Lifetime Access to MA Builders Community</h4>
+                    <p>Network with fellow entrepreneurs and builders</p>
+                </div>
+                <div class="builders-lab-feature">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h4>Revenue-Generating Templates & Scripts</h4>
+                    <p>Ready-to-use templates for immediate implementation</p>
+                </div>
+            </div>
+
+            <!-- Pricing for MA Builders Lab -->
+            <h4 style="text-align: center; font-size: 1.5rem; margin-bottom: 2rem; color: var(--gold);">
+                FOUNDER'S PRICING (Limited Time)
+            </h4>
+
+            <div class="pricing-grid">
+                <!-- Lean Starter -->
+                <div class="pricing-card">
+                    <div class="limited-badge">First 10 Only</div>
+                    <div class="pricing-tier">LEAN STARTER</div>
+                    <div class="pricing-price">$197</div>
+                    <div class="pricing-description">Perfect for getting started with lean methodology</div>
+                    <ul class="pricing-features">
+                        <li>Full MA Builders Lab Program</li>
+                        <li>AI Business Validation Suite</li>
+                        <li>Lean MVP Development System</li>
+                        <li>Lifetime Community Access</li>
+                        <li>Revenue Templates & Scripts</li>
+                        <li>Weekly Group Coaching</li>
+                    </ul>
+                    <a href="#contact" class="btn-enroll">Start My Lean Journey</a>
+                </div>
+
+                <!-- Scale Accelerator -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-tier">SCALE ACCELERATOR</div>
+                    <div class="pricing-price">$397</div>
+                    <div class="pricing-description">Complete scaling system with AI integration</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Lean Starter</li>
+                        <li>2x 1:1 Sessions with Mahmoud Ahmed</li>
+                        <li>AI Automation Setup</li>
+                        <li>Advanced Scaling Frameworks</li>
+                        <li>Priority Support</li>
+                        <li>Business Template Library</li>
+                    </ul>
+                    <a href="#contact" class="btn-enroll">Scale With AI Systems</a>
+                </div>
+
+                <!-- Elite Founder -->
+                <div class="pricing-card">
+                    <div class="pricing-tier">ELITE FOUNDER</div>
+                    <div class="pricing-price">$697</div>
+                    <div class="pricing-description">VIP experience with done-for-you setup</div>
+                    <ul class="pricing-features">
+                        <li>Everything in Scale Accelerator</li>
+                        <li>4x 1:1 Sessions with Mahmoud Ahmed</li>
+                        <li>Done-For-You Business Setup</li>
+                        <li>Custom AI Implementation</li>
+                        <li>Lifetime Program Updates</li>
+                        <li>Elite Founder Network</li>
+                    </ul>
+                    <a href="#contact" class="btn-enroll">Get VIP Access + Done-For-You Setup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREE RESOURCES HUB -->
+    <section class="free-resources-section" id="free-resources">
+        <div class="container">
+            <h2 class="section-title gold">Free Resources Hub</h2>
+            <p class="section-subtitle">Build Your Foundation - No Cost, High Impact</p>
+
+            <div class="resources-grid">
+                <!-- Resource 1 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4 class="resource-title">21-Day Mental Wellness Reset Guide</h4>
+                    <ul class="resource-features">
+                        <li>Emotional regulation blueprint</li>
+                        <li>Stress management protocols</li>
+                        <li>Daily practices & worksheets</li>
+                    </ul>
+                    <button class="btn-download" onclick="openModal('mental-wellness')">
+                        Download Free Guide
+                    </button>
+                    <p class="resource-note">Value: $97 | Free Download</p>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="resource-title">Business Growth Starter Kit</h4>
+                    <ul class="resource-features">
+                        <li>Goal-setting framework</li>
+                        <li>Productivity templates</li>
+                        <li>Financial clarity worksheet</li>
+                    </ul>
+                    <button class="btn-download" onclick="openModal('business-growth')">
+                        Download Free Kit
+                    </button>
+                    <p class="resource-note">Value: $67 | Free Download</p>
+                </div>
+
+                <!-- NEW Resource 3 -->
+                <div class="resource-card">
+                    <div class="new-resource-badge">NEW</div>
+                    <div class="resource-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4 class="resource-title">AI Business Launch Checklist</h4>
+                    <ul class="resource-features">
+                        <li>Business validation framework</li>
+                        <li>AI tools for market research</li>
+                        <li>30-day launch timeline</li>
+                    </ul>
+                    <button class="btn-download" onclick="openModal('ai-checklist')">
+                        Download Free Checklist
+                    </button>
+                    <p class="resource-note">Value: $97 | Free for limited time</p>
+                </div>
+
+                <!-- NEW Resource 4 -->
+                <div class="resource-card">
+                    <div class="new-resource-badge">NEW</div>
+                    <div class="resource-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4 class="resource-title">50 AI Tools Every Builder Needs</h4>
+                    <ul class="resource-features">
+                        <li>Curated AI tools list</li>
+                        <li>Use case breakdowns</li>
+                        <li>Implementation guides</li>
+                    </ul>
+                    <button class="btn-download" onclick="openModal('ai-tools')">
+                        Download Free Guide
+                    </button>
+                    <p class="resource-note">Value: $47 | Free Download</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS CAROUSEL -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title gold">Client Success Stories</h2>
+            <p class="section-subtitle">See Success Stories from our transformation community</p>
+            
+            <div class="testimonials-carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">FH</div>
+                            <h4 style="color: var(--gold); margin-bottom: 10px;">From Chronic Health Issues to Wellness Advocate</h4>
+                            <p class="testimonial-text">
+                                "Before: Type 2 diabetes, obesity (95kg), low energy. 
+                                After: Diabetes reversed, 68kg, launched wellness coaching practice helping 15+ clients/month."
+                            </p>
+                            <div class="client-name">Fatima H. <span class="client-language">Dubai, UAE</span></div>
+                            <div class="testimonial-metrics">
+                                <span class="testimonial-metric">✅ -27kg</span>
+                                <span class="testimonial-metric">📅 8-Month Program</span>
+                                <span class="testimonial-metric">👥 Helps 15+ clients/month</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">MT</div>
+                            <h4 style="color: var(--gold); margin-bottom: 10px;">From Corporate Burnout to Business Freedom</h4>
+                            <p class="testimonial-text">
+                                "Before: 70hr weeks, stress, deteriorating health. 
+                                After: Digital agency $15K/month, 25hr work week, best health in 10 years."
+                            </p>
+                            <div class="client-name">Marcus T. <span class="client-language">London, UK</span></div>
+                            <div class="testimonial-metrics">
+                                <span class="testimonial-metric">✅ -80% Stress</span>
+                                <span class="testimonial-metric">📅 MA Builders Lab</span>
+                                <span class="testimonial-metric">💰 $15K/mo Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">ZM</div>
+                            <h4 style="color: var(--gold); margin-bottom: 10px;">From Anxiety to Achievement</h4>
+                            <p class="testimonial-text">
+                                "Before: Severe anxiety, career confusion, relationship struggles. 
+                                After: Anxiety managed, promoted 2x, engaged to be married with renewed confidence."
+                            </p>
+                            <div class="client-name">Zahra M. <span class="client-language">Toronto, Canada</span></div>
+                            <div class="testimonial-metrics">
+                                <span class="testimonial-metric">✅ Mental Health</span>
+                                <span class="testimonial-metric">📅 Life Architecture Program</span>
+                                <span class="testimonial-metric">💍 Relationship Success</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">DK</div>
+                            <h4 style="color: var(--gold); margin-bottom: 10px;">AI Implementation Changed Everything</h4>
+                            <p class="testimonial-text">
+                                "Before: Service business overwhelmed, manual processes, 60hr weeks. 
+                                After: 80% automation, doubled capacity, 30hr weeks with better work-life balance."
+                            </p>
+                            <div class="client-name">David K. <span class="client-language">Seattle, USA</span></div>
+                            <div class="testimonial-metrics">
+                                <span class="testimonial-metric">✅ +100% Capacity</span>
+                                <span class="testimonial-metric">📅 AI Business Program</span>
+                                <span class="testimonial-metric">⚡ 80% Automated</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">AS</div>
+                            <h4 style="color: var(--gold); margin-bottom: 10px;">From Pre-Diabetes to Business Owner</h4>
+                            <p class="testimonial-text">
+                                "Before: Pre-diabetic, no business experience, working dead-end job. 
+                                After: Reversed pre-diabetes, consulting business $6K/month, financial freedom."
+                            </p>
+                            <div class="client-name">Amina S. <span class="client-language">Nairobi, Kenya</span></div>
+                            <div class="testimonial-metrics">
+                                <span class="testimonial-metric">✅ Health Reversed</span>
+                                <span class="testimonial-metric">📅 6-Month Journey</span>
+                                <span class="testimonial-metric">💰 $6K/mo Business</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav" id="carouselNav">
+                    <!-- Dots will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title white">Ready to Begin Your Transformation?</h2>
+            <p class="section-subtitle">Book Strategy Call with our transformation specialists</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: var(--gold); margin-bottom: 20px;">Begin Your Transformation Journey Today</h3>
+                    <p style="color: var(--light-gray); margin-bottom: 30px;">Schedule your free strategic consultation and take the first step toward lasting transformation across mind, body, and business.</p>
+                    
+                    <div class="contact-details">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px; color: var(--light-gray);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i>
+                            <span><strong>Locations:</strong> Canada • UK • Europe • East Africa • Global Digital</span>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 15px; color: var(--light-gray);">
+                            <i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i>
+                            <span><strong>Email:</strong> matransformationlab@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://x.com/matransformlab" class="social-link" target="_blank" aria-label="X (Twitter)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://tiktok.com/@matransformlab" class="social-link" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://instagram.com/matransformationlab" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/matransformationlab" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com/@matransformationlab" class="social-link" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="section-title" style="font-size: 1.5rem; text-align: center; margin-bottom: 1rem;">Book Your Free Strategic Consultation</h3>
+                    <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Take the first step toward your transformation</p>
+                    
+                    <form class="contact-form" id="transformationForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="service">Service Interest</label>
+                            <select id="service" name="service" class="form-select" required>
+                                <option value="">Select a service</option>
+                                <option value="builders-lab">MA Builders Lab (Business Launch)</option>
+                                <option value="life-architecture">Life Architecture & Emotional Mastery</option>
+                                <option value="relationship">Strategic Relationship Engineering</option>
+                                <option value="metabolic">Metabolic Reset & Lifestyle Blueprint</option>
+                                <option value="academic">Academic & Personal Growth Strategy</option>
+                                <option value="career">Career Discovery & Professional Positioning</option>
+                                <option value="wellness">Wellness System Planning</option>
+                                <option value="ai-courses">AI Transformation Courses</option>
+                                <option value="consultation">Free Strategic Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label" for="message">Your Transformation Goals</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="What would you like to achieve through transformation? Share your goals and challenges..." rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Book Your Free Strategy Session</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MA TRANSFORM LAB</h4>
+                    <p>Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/matransformlab" class="social-link" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                        <a href="https://tiktok.com/@matransformlab" class="social-link" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://instagram.com/matransformationlab" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/matransformationlab" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@matransformationlab" class="social-link" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <a href="#builders-lab">MA Builders Lab 🚀 NEW</a>
+                    <a href="#system">Transformation System</a>
+                    <a href="#ai-courses">AI Transformation Courses</a>
+                    <a href="#programs">Essential Wellness</a>
+                    <a href="#programs">Transformation Pro</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p>Canada • UK • Europe • East Africa • Global Digital</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:matransformationlab@gmail.com">matransformationlab@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#refund">Refund Policy</a>
+                    <a href="#disclaimer">Disclaimer</a>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <p class="copyright">© 2025 MA TRANSFORM LAB. All rights reserved.</p>
+                <p class="footer-tagline">Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-buttons">
+        <a href="#contact" class="fab book" aria-label="Book Free Consultation" title="Book Free Consultation">
+            <i class="fas fa-calendar-check"></i>
+        </a>
+
+        <button class="fab top" id="fab-top" aria-label="Scroll to top" title="Scroll to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <a class="fab wa" href="https://wa.me/252638666133" aria-label="WhatsApp" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Modal for Free Resources -->
+    <div class="modal" id="emailModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 class="modal-title" id="modalTitle">Download Your Free Resource</h3>
+            <form id="downloadForm">
+                <div class="form-group">
+                    <label for="userName">Full Name</label>
+                    <input type="text" id="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" id="userEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="userWhatsApp">WhatsApp Number (Optional)</label>
+                    <input type="tel" id="userWhatsApp">
+                </div>
+                <button type="submit" class="form-submit">Get Instant Access</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ====== Utility helpers ======
+        const qs = (sel, ctx=document) => ctx.querySelector(sel);
+        const qsa = (sel, ctx=document) => Array.from((ctx||document).querySelectorAll(sel));
+        const clamp = (v,min,max)=> Math.max(min,Math.min(max,v));
+
+        /* ====== Counter animation ====== */
+        const counterConfig = {
+            duration: 2500,
+            targets: {
+                counter1: 750,
+                counter2: 28,
+                counter3: 15,
+                counter4: 7
+            }
+        };
+
+        let countersPlayed = false;
+
+        function animateCounter(el, start, end, duration, formatter){
+            return new Promise(resolve=>{
+                const startTime = performance.now();
+                const diff = end - start;
+                function frame(now){
+                    let t = (now - startTime) / duration;
+                    t = clamp(t, 0, 1);
+                    const eased = 1 - (1 - t) * (1 - t);
+                    const value = start + diff * eased;
+                    el.textContent = formatter ? formatter(value) : Math.round(value);
+                    if(t < 1) requestAnimationFrame(frame);
+                    else resolve();
+                }
+                requestAnimationFrame(frame);
+            });
+        }
+
+        async function runCounters(){
+            if (countersPlayed) return;
+            countersPlayed = true;
+            const {duration, targets} = counterConfig;
+            
+            const p1 = animateCounter(document.getElementById('counter-1'), 0, targets.counter1, duration, v => Math.round(v));
+            const p2 = animateCounter(document.getElementById('counter-2'), 0, targets.counter2, duration, v => Math.round(v));
+            const p3 = animateCounter(document.getElementById('counter-3'), 0, targets.counter3, duration, v => Math.round(v));
+            const p4 = animateCounter(document.getElementById('counter-4'), 0, targets.counter4, duration, v => Math.round(v));
+            
+            await Promise.all([p1,p2,p3,p4]);
+        }
+
+        function checkCountersVisibility() {
+            const counterSection = document.querySelector('.counter-stats-section');
+            const sectionTop = counterSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight * 0.8 && !countersPlayed) {
+                runCounters();
+            }
+        }
+
+        window.addEventListener('scroll', checkCountersVisibility);
+        window.addEventListener('load', checkCountersVisibility);
+
+        // Countdown Timer
+        function updateCountdown() {
+            const daysElement = document.getElementById('days');
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            
+            // Set target date (14 days from now)
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 14);
+            
+            function update() {
+                const now = new Date();
+                const difference = targetDate - now;
+                
+                if (difference > 0) {
+                    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    
+                    daysElement.textContent = days.toString().padStart(2, '0');
+                    hoursElement.textContent = hours.toString().padStart(2, '0');
+                    minutesElement.textContent = minutes.toString().padStart(2, '0');
+                }
+            }
+            
+            update();
+            setInterval(update, 60000); // Update every minute
+        }
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.querySelector('.nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Scroll to top functionality
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        document.getElementById('fab-top').addEventListener('click', scrollToTop);
+
+        // Testimonial Carousel
+        const carouselTrack = document.getElementById('carouselTrack');
+        const carouselNav = document.getElementById('carouselNav');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        // Create navigation dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot';
+            dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+            if (index === 0) dot.classList.add('active');
+            
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+            });
+            
+            carouselNav.appendChild(dot);
+        });
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            carouselTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+            
+            // Update active dot
+            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === slideIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            goToSlide(currentSlide);
+        }
+
+        // Auto-rotate every 5 seconds
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('transformationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🎉 Thank you! Your consultation request has been submitted. We will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // Pause auto-slide on hover
+        carouselTrack.addEventListener('mouseenter', stopAutoSlide);
+        carouselTrack.addEventListener('mouseleave', startAutoSlide);
+
+        // Initialize everything when page loads
+        window.addEventListener('load', () => {
+            startAutoSlide();
+            updateCountdown();
+        });
+
+        // Modal Functions
+        let currentResource = '';
+
+        function openModal(resource) {
+            currentResource = resource;
+            const modal = document.getElementById('emailModal');
+            const title = document.getElementById('modalTitle');
+            
+            if (resource === 'mental-wellness') {
+                title.textContent = 'Download 21-Day Mental Wellness Reset Guide';
+            } else if (resource === 'business-growth') {
+                title.textContent = 'Download Business Growth Starter Kit';
+            } else if (resource === 'ai-checklist') {
+                title.textContent = 'Download AI Business Launch Checklist';
+            } else if (resource === 'ai-tools') {
+                title.textContent = 'Download 50 AI Tools Every Builder Needs';
+            }
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('emailModal');
+            modal.style.display = 'none';
+        }
+
+        // Form Submission for free resources
+        document.getElementById('downloadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your download will begin shortly. Check your email for access.');
+            closeModal();
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('emailModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-list a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 22, 40, 0.95)';
+                header.style.backdropFilter = 'blur(15px)';
+            } else {
+                header.style.background = 'var(--glass-bg)';
+                header.style.backdropFilter = 'var(--glass-blur)';
+            }
+        });
+    </script>
+</body>
+</html>

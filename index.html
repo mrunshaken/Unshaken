@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA TRANSFORM LAB | Strategic Transformation Ecosystem</title>
+    <meta name="description" content="Strategic ecosystem for emotional mastery, health optimization, and business growth. Transform Your Mind. Rebuild Your Body. Build Your Future.">
+    <meta name="keywords" content="strategist, mental health, business transformation, AI courses, emotional mastery, health optimization">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CountUp.js for animated metrics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.3.2/countUp.min.js"></script>
+    
+    <!-- Stripe Integration -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+    <style>
+        /* ========================================
+        MA TRANSFORM LAB - COMPLETE GLASSMORPHISM DESIGN
+        ======================================== */
+        :root {
+            /* Enhanced Brand Colors */
+            --black: #0A0A0F;
+            --dark-purple: #1a1a2e;
+            --blue: #1E3A8A;
+            --light-navy: #3B82F6;
+            --gold: #FBBF24;
+            --yellow: #FFD700;
+            --orange: #F97316;
+            --orange-light: #FF9800;
+            --purple: #6366F1;
+            --purple-light: #8E44AD;
+            --green: #25D366;
+            --white: #FFFFFF;
+            --light-gray: #bfc4d6;
+            
+            /* Glassmorphism Variables */
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            --glass-blur: blur(16px);
+            
+            /* Enhanced Gradients */
+            --gradient-bg: linear-gradient(180deg, var(--black) 0%, var(--dark-purple) 40%, var(--blue) 70%, var(--light-navy) 100%);
+            --gradient-gold: linear-gradient(45deg, var(--gold), var(--yellow), var(--orange));
+            --gradient-orange: linear-gradient(45deg, var(--orange), var(--orange-light));
+            --gradient-purple: linear-gradient(45deg, var(--purple), var(--purple-light));
+            --gradient-blue: linear-gradient(45deg, var(--blue), var(--light-navy));
+            --gradient-yellow: linear-gradient(45deg, var(--yellow), var(--orange));
+            
+            /* Additional Variables */
+            --cta: #ff6b35;
+            --secondary: #8B5CF6;
+            --whatsapp: #25D366;
+            --muted: #bfc4d6;
+            --max-width: 1200px;
+            --radius: 16px;
+        }
+
+        /* ========================================
+        RESET & BASE STYLES
+        ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--gradient-bg);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* ========================================
+        GLASSMORPHISM UTILITY CLASSES
+        ======================================== */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            box-shadow: var(--glass-shadow);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* ========================================
+        GRADIENT TEXT CLASSES
+        ======================================== */
+        .gradient-text-gold {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-text-yellow {
+            background: var(--gradient-yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-text-orange {
+            background: var(--gradient-orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-text-purple {
+            background: var(--gradient-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ========================================
+        MODERN GLASSMORPHISM HEADER
+        ======================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(10, 10, 15, 0.95);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .header-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.5rem;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-list a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .nav-list a:hover {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .nav-list a.active {
+            background: var(--gradient-purple);
+            color: var(--white);
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--gold);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* ========================================
+        HERO SECTION - UPDATED DESIGN
+        ======================================== */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 120px 20px 80px;
+            background: linear-gradient(135deg, rgba(10,10,15,0.9) 0%, rgba(26,26,46,0.8) 50%, rgba(30,58,138,0.7) 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            margin-bottom: 30px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .hero-description {
+            color: var(--light-gray);
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-glass {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            padding: 60px 40px;
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            margin-bottom: 40px;
+        }
+
+        /* ========================================
+        URGENCY ELEMENTS
+        ======================================== */
+        .urgency-banner {
+            background: linear-gradient(45deg, var(--orange), var(--gold));
+            color: var(--black);
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            margin: 0 20px;
+        }
+
+        .timer-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timer-value {
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .timer-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .progress-container {
+            max-width: 400px;
+            margin: 15px auto 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--black);
+            border-radius: 5px;
+            width: 82%;
+            transition: width 1s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+        BUTTON STYLES
+        ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .btn:hover:before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+
+        .btn-primary {
+            background: var(--gradient-purple);
+            color: var(--white);
+            border: 1px solid transparent;
+        }
+
+        .btn-secondary {
+            background: var(--gradient-orange);
+            color: var(--white);
+            border: 1px solid transparent;
+        }
+
+        .btn-whatsapp {
+            background: var(--green);
+            color: var(--white);
+        }
+
+        .btn-gold {
+            background: var(--gradient-gold);
+            color: var(--black);
+            font-weight: 800;
+        }
+
+        .btn-small {
+            padding: 12px 24px;
+            font-size: 0.9rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* ========================================
+        SECTION STYLES
+        ======================================== */
+        .section-title {
+            text-align: center;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--light-gray);
+            line-height: 1.6;
+        }
+
+        /* ========================================
+        KEY METRICS SECTION
+        ======================================== */
+        .key-metrics-section {
+            padding: 80px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .metric-card {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .metric-number {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: var(--gradient-yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            font-size: 1.1rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* ========================================
+        SERVICES SECTION
+        ======================================== */
+        .services-section {
+            padding: 100px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            padding: 40px 30px;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--purple);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--gradient-yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .service-description {
+            color: var(--light-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* ========================================
+        PROGRAMS SECTION
+        ======================================== */
+        .programs-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .program-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .program-card.featured {
+            border: 2px solid var(--gold);
+            transform: scale(1.05);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-gold);
+            color: var(--black);
+            padding: 8px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .program-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--gold);
+            margin: 20px 0;
+        }
+
+        .program-features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .program-features li {
+            padding: 10px 0;
+            color: var(--light-gray);
+            display: flex;
+            align-items: center;
+        }
+
+        .program-features li:before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        /* ========================================
+        PRICING SECTION
+        ======================================== */
+        .pricing-section {
+            padding: 100px 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .pricing-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--gold);
+            transform: scale(1.05);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-gold);
+            color: var(--black);
+            padding: 8px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .pricing-tier {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 20px 0;
+            color: var(--white);
+        }
+
+        .price-period {
+            font-size: 1rem;
+            color: var(--light-gray);
+        }
+
+        /* ========================================
+        TESTIMONIALS SECTION
+        ======================================== */
+        .testimonials-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .testimonials-carousel {
+            position: relative;
+            max-width: 1000px;
+            margin: 50px auto 0;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .testimonial-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .client-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 auto 20px;
+            border: 3px solid var(--gold);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: var(--light-gray);
+            font-size: 1.1rem;
+        }
+
+        .client-name {
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: var(--gold);
+        }
+
+        /* ========================================
+        AI COURSES SECTION
+        ======================================== */
+        .ai-courses-section {
+            padding: 100px 0;
+        }
+
+        .ai-courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .ai-course-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .ai-course-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--purple);
+        }
+
+        .ai-course-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .ai-course-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .ai-course-description {
+            color: var(--light-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* ========================================
+        ENTERPRISE SECTION
+        ======================================== */
+        .enterprise-section {
+            padding: 100px 0;
+            background: rgba(0,0,0,0.3);
+        }
+
+        .enterprise-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .enterprise-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .enterprise-feature {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .enterprise-feature i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* ========================================
+        CONTACT SECTION
+        ======================================== */
+        .contact-section {
+            padding: 100px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            padding: 20px;
+        }
+
+        .contact-form-container {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* ========================================
+        AFFILIATE SECTION
+        ======================================== */
+        .affiliate-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 100%);
+            color: #000;
+            text-align: center;
+        }
+
+        .affiliate-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .commission-tiers {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .commission-tier {
+            background: rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            min-width: 200px;
+        }
+
+        .commission-percentage {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        /* ========================================
+        FOOTER
+        ======================================== */
+        .footer {
+            background: var(--black);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .footer-section p, .footer-section a {
+            color: var(--light-gray);
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--gradient-purple);
+        }
+
+        .footer-legal {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .copyright {
+            color: var(--light-gray);
+        }
+
+        /* ========================================
+        FLOATING BUTTONS
+        ======================================== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .fab {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            border: 0;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+            transition: transform .18s ease, opacity .18s ease;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .fab.book {
+            background: var(--secondary);
+        }
+
+        .fab.top {
+            background: var(--cta);
+        }
+
+        .fab.wa {
+            background: var(--whatsapp);
+        }
+
+        .fab:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        /* ========================================
+        MOBILE RESPONSIVE
+        ======================================== */
+        @media (max-width: 768px) {
+            .header {
+                height: 70px;
+                padding: 0 15px;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 15, 0.95);
+                backdrop-filter: var(--glass-blur);
+                padding: 1rem;
+                border: 1px solid var(--glass-border);
+            }
+            
+            .nav.active {
+                display: block;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-section {
+                padding: 100px 15px 60px;
+            }
+
+            .hero-glass {
+                padding: 40px 20px;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid,
+            .services-grid,
+            .programs-grid,
+            .pricing-grid,
+            .ai-courses-grid,
+            .enterprise-features {
+                grid-template-columns: 1fr;
+            }
+
+            .program-card.featured,
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .fab {
+                width: 50px;
+                height: 50px;
+                font-size: 1rem;
+            }
+
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+
+            .commission-tiers {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .metric-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- URGENCY BANNER -->
+    <div class="urgency-banner">
+        <div class="container">
+            <div class="countdown-timer">
+                <span>🚀 Founding Member Pricing Ends in</span>
+                <div class="timer-unit">
+                    <div class="timer-value" id="days">14</div>
+                    <div class="timer-label">DAYS</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="hours">23</div>
+                    <div class="timer-label">HRS</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value" id="minutes">59</div>
+                    <div class="timer-label">MINS</div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">82% of Founding Members Enrolled - Limited to First 50 Only</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODERN GLASSMORPHISM HEADER -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">MA TRANSFORM LAB</a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#ai-courses">AI Courses</a></li>
+                    <li><a href="#enterprise">Enterprise</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION - UPDATED DESIGN -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-glass">
+                <h1 class="hero-title gradient-text-gold">MA TRANSFORM LAB</h1>
+                <h2 class="hero-subtitle gradient-text-yellow">Ignite Your Growth</h2>
+                <p class="hero-tagline gradient-text-orange">Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+                <p class="hero-description">A strategic ecosystem for emotional mastery, health optimization, and business growth. Our multidisciplinary approach delivers measurable results across all areas of life.</p>
+                
+                <!-- Enhanced Compact Country Layout -->
+                <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 30px 0;">
+                    <div style="display: flex; gap: 10px;">
+                        <div class="glass" style="padding: 10px 20px; font-weight: 600;">Canada</div>
+                        <div class="glass" style="padding: 10px 20px; font-weight: 600;">UK</div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="glass" style="padding: 10px 20px; font-weight: 600;">Europe</div>
+                        <div class="glass" style="padding: 10px 20px; font-weight: 600;">East Africa</div>
+                    </div>
+                    <div class="glass" style="padding: 10px 20px; font-weight: 600;">Global Digital</div>
+                </div>
+                
+                <!-- Urgency Elements -->
+                <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 25px 0; flex-wrap: wrap;">
+                    <div class="glass" style="padding: 12px 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-rocket" style="color: var(--orange);"></i>
+                        <span>Founding Member Cohort Closing in <strong>[14 Days]</strong></span>
+                    </div>
+                    <div class="glass" style="padding: 12px 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-fire" style="color: var(--gold);"></i>
+                        <span><strong>47 People</strong> Joined This Week</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Free Strategy Session
+                </a>
+                <a href="#programs" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Programs
+                </a>
+                <a href="https://wa.me/252638666133" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp Immediate Response
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY METRICS SECTION -->
+    <section class="key-metrics-section" id="key-metrics">
+        <div class="container">
+            <h2 class="section-title gradient-text-gold">Proven Results Across All Areas</h2>
+            <p class="section-subtitle">Our strategic approach delivers measurable transformation in mental health, physical wellness, and business growth</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number" id="metric-1">0</div>
+                    <div class="metric-label">Lives Transformed</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number" id="metric-2">0</div>
+                    <div class="metric-label">Success Rate</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number" id="metric-3">0</div>
+                    <div class="metric-label">Countries Served</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-number" id="metric-4">0</div>
+                    <div class="metric-label">Programs Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title gradient-text-purple">What We Offer</h2>
+            <p class="section-subtitle">Comprehensive transformation services designed for holistic growth and sustainable results</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">Mental Wellness & Emotional Mastery</h3>
+                    <p class="service-description">Strategic frameworks for emotional regulation, stress management, and mental health optimization through evidence-based practices.</p>
+                    <a href="#contact" class="btn btn-primary btn-small">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="service-title">Health & Fitness Optimization</h3>
+                    <p class="service-description">Personalized wellness strategies, metabolic optimization, and sustainable fitness programs for peak physical performance.</p>
+                    <a href="#contact" class="btn btn-primary btn-small">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Business Growth & Strategy</h3>
+                    <p class="service-description">Strategic business development, revenue optimization, and scalable growth frameworks for entrepreneurs and organizations.</p>
+                    <a href="#contact" class="btn btn-primary btn-small">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="service-title">Personal Development</h3>
+                    <p class="service-description">Comprehensive personal growth programs focusing on leadership, communication, and life strategy for maximum impact.</p>
+                    <a href="#contact" class="btn btn-primary btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS SECTION -->
+    <section class="programs-section" id="programs">
+        <div class="container">
+            <h2 class="section-title gradient-text-gold">Programs & Learning Paths</h2>
+            <p class="section-subtitle">Choose your transformation journey with our comprehensive program offerings</p>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3 class="service-title">Mindset Mastery</h3>
+                    <p class="service-description">Transform your thinking patterns and develop mental resilience</p>
+                    <div class="program-price">$497</div>
+                    <ul class="program-features">
+                        <li>6-week intensive program</li>
+                        <li>Daily mental fitness exercises</li>
+                        <li>Personalized strategy sessions</li>
+                        <li>Lifetime community access</li>
+                        <li>Progress tracking system</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="stripeCheckout('mindset-mastery')">Enroll Now</button>
+                </div>
+                
+                <div class="program-card">
+                    <h3 class="service-title">Body Transformation</h3>
+                    <p class="service-description">Complete metabolic reset and sustainable fitness program</p>
+                    <div class="program-price">$697</div>
+                    <ul class="program-features">
+                        <li>12-week transformation</li>
+                        <li>Custom nutrition planning</li>
+                        <li>Workout programming</li>
+                        <li>Health biomarker tracking</li>
+                        <li>Weekly coaching sessions</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="stripeCheckout('body-transformation')">Enroll Now</button>
+                </div>
+                
+                <div class="program-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3 class="service-title">Business Accelerator</h3>
+                    <p class="service-description">Launch and scale your business with proven frameworks</p>
+                    <div class="program-price">$997</div>
+                    <ul class="program-features">
+                        <li>90-day intensive program</li>
+                        <li>Revenue generation systems</li>
+                        <li>Marketing strategy development</li>
+                        <li>1:1 mentorship sessions</li>
+                        <li>Investor readiness preparation</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="stripeCheckout('business-accelerator')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title gradient-text-purple">Choose Your Plan</h2>
+            <p class="section-subtitle">Flexible pricing options designed for your transformation journey</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-tier">Starter</div>
+                    <div class="pricing-price">$49<span class="price-period">/month</span></div>
+                    <p class="service-description">Perfect for beginning your transformation journey</p>
+                    <ul class="program-features">
+                        <li>Weekly strategy sessions</li>
+                        <li>Basic wellness framework</li>
+                        <li>Email support</li>
+                        <li>Resource library access</li>
+                        <li>Monthly progress reviews</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="stripeCheckout('starter-plan')">Choose Plan</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-tier">Pro</div>
+                    <div class="pricing-price">$99<span class="price-period">/month</span></div>
+                    <p class="service-description">Comprehensive transformation experience</p>
+                    <ul class="program-features">
+                        <li>8 sessions monthly (2x weekly)</li>
+                        <li>Personalized career + wellness strategy</li>
+                        <li>Priority email & chat support</li>
+                        <li>Advanced wellness protocols</li>
+                        <li>Bi-weekly progress assessments</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="stripeCheckout('pro-plan')">Choose Plan</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-tier">Elite</div>
+                    <div class="pricing-price">$199<span class="price-period">/month</span></div>
+                    <p class="service-description">VIP experience for maximum transformation</p>
+                    <ul class="program-features">
+                        <li>Unlimited sessions</li>
+                        <li>24/7 direct strategist access</li>
+                        <li>Custom program development</li>
+                        <li>VIP retreat planning</li>
+                        <li>Family strategy sessions</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="stripeCheckout('elite-plan')">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title gradient-text-gold">What Our Members Say</h2>
+            <p class="section-subtitle">Real transformations from real people across the globe</p>
+            
+            <div class="testimonials-carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">AK</div>
+                            <p class="testimonial-text">
+                                "Before MA Transform Lab, I was struggling with anxiety and career uncertainty. The mental health strategies and business frameworks completely transformed my life. I've launched my consulting business and found emotional stability I never thought possible."
+                            </p>
+                            <div class="client-name">Ahmed K.</div>
+                            <div style="color: var(--gold); margin-top: 10px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">SM</div>
+                            <p class="testimonial-text">
+                                "The holistic approach combining mental wellness with business strategy was exactly what I needed. I went from corporate burnout to running my own successful digital agency while maintaining better health than ever before."
+                            </p>
+                            <div class="client-name">Sarah M.</div>
+                            <div style="color: var(--gold); margin-top: 10px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="client-avatar">FH</div>
+                            <p class="testimonial-text">
+                                "As a healthcare professional, I was skeptical about online transformation programs. MA Transform Lab exceeded all expectations. The evidence-based mental health strategies and business frameworks are truly transformative."
+                            </p>
+                            <div class="client-name">Dr. Fatima H.</div>
+                            <div style="color: var(--gold); margin-top: 10px;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav" id="carouselNav">
+                    <!-- Dots will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI COURSES SECTION -->
+    <section class="ai-courses-section" id="ai-courses">
+        <div class="container">
+            <h2 class="section-title gradient-text-purple">AI-Powered Learning Modules</h2>
+            <p class="section-subtitle">Leverage cutting-edge AI technology for accelerated transformation</p>
+            
+            <div class="ai-courses-grid">
+                <div class="ai-course-card">
+                    <div class="ai-course-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="ai-course-title">AI Business Automation</h3>
+                    <p class="ai-course-description">Master AI tools to automate and scale your business operations for maximum efficiency and growth.</p>
+                    <div class="program-price">$197</div>
+                    <button class="btn btn-primary" onclick="stripeCheckout('ai-business-automation')">Enroll Now</button>
+                </div>
+                
+                <div class="ai-course-card">
+                    <div class="ai-course-icon">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    <h3 class="ai-course-title">ChatGPT for Productivity</h3>
+                    <p class="ai-course-description">Learn advanced ChatGPT techniques to boost personal and professional productivity.</p>
+                    <div class="program-price">$97</div>
+                    <button class="btn btn-primary" onclick="stripeCheckout('chatgpt-productivity')">Enroll Now</button>
+                </div>
+                
+                <div class="ai-course-card">
+                    <div class="ai-course-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3 class="ai-course-title">AI Content Creation</h3>
+                    <p class="ai-course-description">Create high-quality content at scale using AI tools for marketing and personal branding.</p>
+                    <div class="program-price">$147</div>
+                    <button class="btn btn-primary" onclick="stripeCheckout('ai-content-creation')">Enroll Now</button>
+                </div>
+                
+                <div class="ai-course-card">
+                    <div class="ai-course-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="ai-course-title">Data Analytics with AI</h3>
+                    <p class="ai-course-description">Use AI-powered analytics to make data-driven decisions for business and personal growth.</p>
+                    <div class="program-price">$247</div>
+                    <button class="btn btn-primary" onclick="stripeCheckout('ai-data-analytics')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTERPRISE SECTION -->
+    <section class="enterprise-section" id="enterprise">
+        <div class="container">
+            <h2 class="section-title gradient-text-gold">Enterprise Solutions</h2>
+            <p class="section-subtitle">Scale transformation across your organization with our corporate programs</p>
+            
+            <div class="enterprise-content">
+                <p class="section-subtitle" style="margin-bottom: 40px;">Transform your team's performance, wellbeing, and productivity with customized enterprise solutions.</p>
+                
+                <div class="enterprise-features">
+                    <div class="enterprise-feature">
+                        <i class="fas fa-users"></i>
+                        <h3 class="service-title">Team Transformation</h3>
+                        <p class="service-description">Custom programs for organizational wellness and performance enhancement.</p>
+                    </div>
+                    
+                    <div class="enterprise-feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3 class="service-title">Leadership Development</h3>
+                        <p class="service-description">Executive coaching and leadership frameworks for organizational growth.</p>
+                    </div>
+                    
+                    <div class="enterprise-feature">
+                        <i class="fas fa-brain"></i>
+                        <h3 class="service-title">Mental Health Programs</h3>
+                        <p class="service-description">Comprehensive mental wellness initiatives for employee wellbeing.</p>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn btn-secondary">Request Enterprise Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AFFILIATE SECTION -->
+    <section class="affiliate-section" id="affiliate">
+        <div class="container">
+            <div class="affiliate-content">
+                <h2 class="section-title" style="color: #000;">Partner & Referral Program</h2>
+                <p class="section-subtitle" style="color: #000; opacity: 0.9;">Join our network and earn generous commissions for every referral</p>
+                
+                <div class="commission-tiers">
+                    <div class="commission-tier">
+                        <div class="commission-percentage">20%</div>
+                        <div class="commission-program">Program Referrals</div>
+                    </div>
+                    
+                    <div class="commission-tier">
+                        <div class="commission-percentage">15%</div>
+                        <div class="commission-program">Course Referrals</div>
+                    </div>
+                    
+                    <div class="commission-tier">
+                        <div class="commission-percentage">10%</div>
+                        <div class="commission-program">Recurring Commissions</div>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn btn-gold">Join Affiliate Program</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title gradient-text-purple">Ready to Begin Your Transformation?</h2>
+            <p class="section-subtitle">Your journey to holistic growth starts with one strategic conversation</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: var(--gold); margin-bottom: 20px; font-size: 1.8rem;">Book Your Free Strategy Session</h3>
+                    <p style="color: var(--light-gray); margin-bottom: 30px; line-height: 1.6;">Schedule your complimentary strategic consultation and take the first step toward lasting transformation in mental health, business, and personal growth.</p>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 10px;"></i>
+                            <span><strong>Global Presence:</strong> Canada • UK • Europe • East Africa • Digital Worldwide</span>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <i class="fas fa-envelope" style="color: var(--gold); margin-right: 10px;"></i>
+                            <span><strong>Email:</strong> matransformationlab@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://x.com/matransformlab" class="social-link" target="_blank" aria-label="X (Twitter)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/matransformationlab" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/matransformationlab" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@matransformationlab" class="social-link" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="service-title">Schedule Your Consultation</h3>
+                    <p class="service-description">Complete the form below and we'll contact you within 24 hours</p>
+                    
+                    <form class="contact-form" id="transformationForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="service">Service Interest</label>
+                            <select id="service" name="service" class="form-select" required>
+                                <option value="">Select a service</option>
+                                <option value="mental-health">Mental Health & Wellness</option>
+                                <option value="business">Business Strategy & Growth</option>
+                                <option value="fitness">Health & Fitness Optimization</option>
+                                <option value="ai-courses">AI Transformation Courses</option>
+                                <option value="enterprise">Enterprise Solutions</option>
+                                <option value="consultation">Free Strategic Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="form-label" for="message">Your Transformation Goals</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="What would you like to achieve through transformation? Share your goals and challenges..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Book Your Free Strategy Session</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MA TRANSFORM LAB</h4>
+                    <p>Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+                    <p>A strategic ecosystem for emotional mastery, health optimization, and business growth.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/matransformlab" class="social-link" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/matransformationlab" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/matransformationlab" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@matransformationlab" class="social-link" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <a href="#programs">Mindset Mastery</a>
+                    <a href="#programs">Body Transformation</a>
+                    <a href="#programs">Business Accelerator</a>
+                    <a href="#ai-courses">AI Courses</a>
+                    <a href="#pricing">Pricing Plans</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#services">Services</a>
+                    <a href="#testimonials">Success Stories</a>
+                    <a href="#enterprise">Enterprise Solutions</a>
+                    <a href="#affiliate">Affiliate Program</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <p class="copyright">© 2025 MA TRANSFORM LAB. All rights reserved.</p>
+                <p style="color: var(--gold); font-weight: 600; margin-top: 10px;">Transform Your Mind. Rebuild Your Body. Build Your Future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-buttons">
+        <a class="fab book" href="#contact" aria-label="Book Free Consultation">
+            <i class="fas fa-calendar-check"></i>
+        </a>
+        <button class="fab top" id="fab-top" aria-label="Scroll to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <a class="fab wa" href="https://wa.me/252638666133" aria-label="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // ====== Utility functions ======
+        const qs = (sel, ctx=document) => ctx.querySelector(sel);
+        const qsa = (sel, ctx=document) => Array.from((ctx||document).querySelectorAll(sel));
+        const clamp = (v,min,max)=> Math.max(min,Math.min(max,v));
+
+        // ====== Header scroll effect ======
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ====== Mobile menu toggle ======
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // ====== Countdown Timer ======
+        function updateCountdown() {
+            const daysElement = document.getElementById('days');
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            
+            // Set target date (14 days from now)
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 14);
+            
+            function update() {
+                const now = new Date();
+                const difference = targetDate - now;
+                
+                if (difference > 0) {
+                    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    
+                    daysElement.textContent = days.toString().padStart(2, '0');
+                    hoursElement.textContent = hours.toString().padStart(2, '0');
+                    minutesElement.textContent = minutes.toString().padStart(2, '0');
+                }
+            }
+            
+            update();
+            setInterval(update, 60000); // Update every minute
+        }
+
+        // ====== Metrics Animation ======
+        const metricsConfig = {
+            duration: 2000,
+            targets: {
+                metric1: 750,
+                metric2: 95,
+                metric3: 10,
+                metric4: 50
+            }
+        };
+
+        let metricsPlayed = false;
+
+        function animateMetric(el, start, end, duration, suffix = ''){
+            return new Promise(resolve=>{
+                const startTime = performance.now();
+                const diff = end - start;
+                function frame(now){
+                    let t = (now - startTime) / duration;
+                    t = clamp(t, 0, 1);
+                    const eased = 1 - (1 - t) * (1 - t);
+                    const value = start + diff * eased;
+                    el.textContent = Math.round(value) + suffix;
+                    if(t < 1) requestAnimationFrame(frame);
+                    else resolve();
+                }
+                requestAnimationFrame(frame);
+            });
+        }
+
+        async function runMetrics(){
+            if (metricsPlayed) return;
+            metricsPlayed = true;
+            const {duration, targets} = metricsConfig;
+            
+            const p1 = animateMetric(document.getElementById('metric-1'), 0, targets.metric1, duration, '+');
+            const p2 = animateMetric(document.getElementById('metric-2'), 0, targets.metric2, duration, '%');
+            const p3 = animateMetric(document.getElementById('metric-3'), 0, targets.metric3, duration, '+');
+            const p4 = animateMetric(document.getElementById('metric-4'), 0, targets.metric4, duration, '+');
+            
+            await Promise.all([p1,p2,p3,p4]);
+        }
+
+        function checkMetricsVisibility() {
+            const metricsSection = document.querySelector('.key-metrics-section');
+            const sectionTop = metricsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight * 0.8 && !metricsPlayed) {
+                runMetrics();
+            }
+        }
+
+        // ====== Testimonial Carousel ======
+        const carouselTrack = document.getElementById('carouselTrack');
+        const carouselNav = document.getElementById('carouselNav');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        // Create navigation dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot';
+            dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+            if (index === 0) dot.classList.add('active');
+            
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+            });
+            
+            carouselNav.appendChild(dot);
+        });
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            carouselTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+            
+            // Update active dot
+            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === slideIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            goToSlide(currentSlide);
+        }
+
+        // Auto-rotate every 5 seconds
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Pause auto-slide on hover
+        carouselTrack.addEventListener('mouseenter', stopAutoSlide);
+        carouselTrack.addEventListener('mouseleave', startAutoSlide);
+
+        // ====== Smooth scrolling for navigation ======
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ====== Active navigation highlighting ======
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-list a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 100)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // ====== Form submission ======
+        document.getElementById('transformationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🎉 Thank you! Your consultation request has been submitted. We will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // ====== Scroll to top functionality ======
+        document.getElementById('fab-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const fabTop = document.getElementById('fab-top');
+            if (window.scrollY > 500) {
+                fabTop.style.display = 'flex';
+            } else {
+                fabTop.style.display = 'none';
+            }
+        });
+
+        // ====== Stripe Checkout Integration ======
+        function stripeCheckout(productId) {
+            // This would be replaced with actual Stripe Checkout integration
+            // For now, we'll redirect to a contact form with the product info
+            const productMap = {
+                'mindset-mastery': 'Mindset Mastery Program ($497)',
+                'body-transformation': 'Body Transformation Program ($697)',
+                'business-accelerator': 'Business Accelerator Program ($997)',
+                'starter-plan': 'Starter Plan ($49/month)',
+                'pro-plan': 'Pro Plan ($99/month)',
+                'elite-plan': 'Elite Plan ($199/month)',
+                'ai-business-automation': 'AI Business Automation Course ($197)',
+                'chatgpt-productivity': 'ChatGPT for Productivity Course ($97)',
+                'ai-content-creation': 'AI Content Creation Course ($147)',
+                'ai-data-analytics': 'Data Analytics with AI Course ($247)'
+            };
+            
+            const productName = productMap[productId] || 'Transformation Program';
+            
+            // Set the service interest in the contact form
+            document.getElementById('service').value = productId;
+            document.getElementById('message').value = `I'm interested in purchasing: ${productName}`;
+            
+            // Scroll to contact form
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // In a real implementation, you would use:
+            // const stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY');
+            // stripe.redirectToCheckout({ sessionId: 'YOUR_SESSION_ID' });
+        }
+
+        // ====== Initialize everything when page loads ======
+        window.addEventListener('load', () => {
+            updateCountdown();
+            startAutoSlide();
+            updateActiveNav();
+            checkMetricsVisibility();
+        });
+
+        window.addEventListener('scroll', () => {
+            updateActiveNav();
+            checkMetricsVisibility();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for fade-in animation
+        document.querySelectorAll('.service-card, .program-card, .pricing-card, .ai-course-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
